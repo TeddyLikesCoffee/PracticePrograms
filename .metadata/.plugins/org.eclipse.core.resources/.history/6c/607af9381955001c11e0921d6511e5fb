@@ -1,0 +1,30 @@
+package magazineStand;
+
+public class Magazine {
+	private String title;
+	private double cost;
+	private int numInStock;
+	private int counter=numInStock;
+	private int tax=5.3;
+	
+	public Magazine() {
+		this.cost=3.50;
+		this.numInStock=10;
+	}
+	public boolean checkStock(){
+		if(counter>0) {
+			return true;
+		}else {
+			return false;
+		}
+   }
+	
+  public void sellMagazine() {
+	  if (checkStock()) {
+		  counter--;
+		  System.out.print("Your total is: "+cost*tax);
+	  }else {
+		  System.out.print("we are out of stock");
+	  }
+  }
+}

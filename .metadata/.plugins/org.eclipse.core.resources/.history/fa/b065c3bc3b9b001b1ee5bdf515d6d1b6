@@ -1,0 +1,100 @@
+package algorithms_and_data_structures;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] nums={ 10, 14, 28, 11, 7, 16, 30, 50, 25, 18};
+		bubbleSortDaily(nums);
+		
+	}
+	//insertion sort daily practice
+	
+	//selection sort daily practice
+	public static void selectionDaily(int arr []) {
+		for(int x=0;x<arr.length;x++) {
+			for(int y=x+1;y <arr.length;y++) {
+				if(arr[x]>arr[y]) {
+					int temp=arr[x];
+					arr[y]=arr[x];
+					arr[x]=temp;
+					
+				}
+				
+			}
+			
+		}
+		for(int lo : arr) {
+			System.out.println(lo);
+		}
+	}
+	//bubble sort  daily practice
+	public static void bubbleSortDaily(int arr []) {
+		for(int x=0; x< arr.length;x++) {
+			for(int y=0; y<arr.length-1-x; y++) {
+				if(arr[y]>arr[y+1]) {
+					int temp= arr[y];
+					arr[y]=arr[y+1];
+					arr[y+1]=temp;
+					
+				}
+			}
+		}
+		for(int lo : arr ) {
+			System.out.println(lo);
+		}
+	}	
+	
+	
+	
+	
+		
+	//MAKE SAMPLES
+	public static void bubbuleSort(int [] nums) {
+		for(int x=0;x<nums.length;x++) {
+			for(int y=0;y<nums.length-x-1;y++) {
+				if(nums[y]>nums[y+1]) {
+					int temp=nums[y];
+					nums[y]=nums[y+1];
+					nums[y+1]=temp;
+					
+				}
+			}
+			
+		}
+		for(int lo : nums) {
+			System.out.println(lo);
+		}
+	}
+	
+	public static void insertionSort(int [] array) {  
+        for (int j = 1; j < array.length; j++) {  
+            int currentPointer = array[j];  
+            int i = j-1;  
+            while ( (i > -1) && ( array [i] > currentPointer ) ) {  
+                array [i+1] = array [i];  
+                i--;  
+            }  
+            array[i+1] = currentPointer;  
+        }  
+        for(int lo : array){
+        	System.out.println(lo);
+        }
+	}
+	
+	public static void selectionSort(int [] nums) {
+		for(int x=0;x<nums.length;x++) {
+			for(int y=x+1;y<nums.length;y++) {
+				if(nums[x]<nums[y]) {
+				int temp=nums[x];
+				nums[x]=nums[y];
+				nums[y]=temp;
+				}
+			}
+		}
+		for(int lo : nums) {
+			System.out.println(lo);
+		}
+	}
+
+}

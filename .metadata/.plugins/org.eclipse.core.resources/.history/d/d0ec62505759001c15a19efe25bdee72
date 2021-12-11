@@ -1,0 +1,10 @@
+package gmuPeople;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Faculty teacher= new Faculty(123456,"Miriam","Pantoja","Computer Science", 1);
+	}
+
+}

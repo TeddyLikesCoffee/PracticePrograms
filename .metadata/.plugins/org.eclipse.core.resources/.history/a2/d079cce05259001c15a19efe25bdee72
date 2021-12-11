@@ -1,0 +1,11 @@
+package gmuPeople;
+
+public class Faculty extends Person{
+	private String department;
+	private int teachLoad;
+	
+	Faculty(){}
+	Faculty(int gn, String fn, String ln){
+		super(gn,fn,ln);
+	}
+}

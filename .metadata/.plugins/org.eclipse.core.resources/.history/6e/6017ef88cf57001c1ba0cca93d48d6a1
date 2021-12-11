@@ -1,0 +1,17 @@
+package basketballTournament;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Teams [] teams = new Teams[4]; 
+		System.out.print("Enter the Teams name: ");
+		Scanner n= new Scanner(System.in);
+		String name=n.next();
+		
+		
+	}
+
+}

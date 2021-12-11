@@ -1,0 +1,27 @@
+package basketballTournament;
+
+public class Teams {
+	public static int MAX_PLAYERS_PER_TEAM;
+	public static double MINIMUM_PLAYER_GPA;
+	
+	private String name;
+	private String email;
+	private int numPlayers;
+	private String playerNames;
+	private double playerGPAs;
+	
+	public Teams() {
+	}
+	
+	public void setName(String name) { this.name=name;}
+	public void setEmail(String email) {this.email=email;}
+	
+	public boolean setAPlayer(String name, double gpa) {
+		return false;
+	}
+	
+	 public String toString() {
+		return "something";
+	}
+	
+}
