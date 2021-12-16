@@ -1,6 +1,0 @@
-package basketballTournament;
-
-public class Teams {
-	public static int MAX_PLAYERS_PER_TEAM;
-	
-}

@@ -28,6 +28,9 @@ public class AddTwoNum {
 	public void printNums() {
 		System.out.print("Two numbers: " +this.numOne +" "+ this.numTwo+"\n");
 	}
+	public String toString() {
+		return getClass().getTypeName();
+	}
 
 
 

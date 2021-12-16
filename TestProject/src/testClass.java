@@ -7,8 +7,10 @@ public class testClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		final int MAX = 3;
-		AddTwoNum [] nums= new AddTwoNum[MAX]; 
-		addNumbers(nums,MAX);
+		//AddTwoNum [] nums= new AddTwoNum[MAX]; 
+		//addNumbers(nums,MAX);
+		AddTwoNum test= new AddTwoNum();
+		System.out.println(test.toString());
 	}
 	public AddTwoNum [] printNumbers(int [] x) {
 		 AddTwoNum [] numbers = new AddTwoNum[x.length];
